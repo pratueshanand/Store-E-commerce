@@ -38,6 +38,8 @@
   @import "home.scss";
   @import "cart.scss";
   @import "shipping.scss";
+  @import "login.scss";
+  @import "search.scss";
   @import "admin-styles/dashboard";
   @import "admin-styles/products";
   @import "admin-styles/chart";
@@ -62,8 +64,24 @@
 
 
 
+  .container {
+    max-width: 1367px;
+    width: 100%;
+    margin: auto;
+    overflow: auto;
 
+    >h1 {
+      @include heading;
+      margin: 1rem 0;
+      text-align: left;
+    }
+  }
 
+  .heading {
+    @include heading;
+    margin: 1rem 0;
+    text-align: center;
+  }
 
   .header {
     @include flex(row, flex-end, stretch, 1.2rem);
@@ -72,7 +90,7 @@
     a {
       color: $color2;
       letter-spacing: 1px;
-      font-size: 1.2 rem;
+      font-size: 1.2rem;
 
       &:hover{
         color: $color3;
@@ -81,7 +99,7 @@
 
     button {
       border: none;
-      font-size: 1.2 rem;
+      font-size: 1.2rem;
       cursor: pointer;
       background-color: transparent;
       &:hover{
@@ -98,12 +116,12 @@
       left: calc(100% - 100px);
       top: 8%;
       > div{
-        @include flex(column, flex-start, center, 0.25 rem);
+        @include flex(column, flex-start, center, 0.25rem);
       }
     }
   }
 
-
+  
 
 
 
